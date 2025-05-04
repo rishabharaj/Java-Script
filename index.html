@@ -4,115 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation Examples</title>
-    <style>
-        .example {
-            margin-bottom: 20px;
-        }
-        .example button {
-            margin-top: 10px;
-        }
-        .highlight {
-            background-color: yellow;
-            font-weight: bold;
-        }
-        .lowlight {
-            background-color: lightcoral;
-            transform: scale(0.8);
-        }
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: lightblue;
-            margin: 10px;
-            transition: background-color 0.5s, transform 0.5s;
-        }
-        /* Info Bar Styling */
-        .info-bar {
-            background-color: #f8f9fa;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            border: 1px solid #dee2e6;
-        }
-        .user-info {
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 5px;
-        }
-        .date-time {
-            color: #666;
-            font-family: monospace;
-        }
-       
-        /* Previous styles remain same */
-        .example {
-            margin-bottom: 20px;
-        }
-        .example button {
-            margin-top: 10px;
-        }
-        .highlight {
-            background-color: yellow;
-            font-weight: bold;
-        }
-        .lowlight {
-            background-color: lightcoral;
-            transform: scale(0.8);
-        }
-        .box {
-            width: 100px;
-            height: 100px;
-            background-color: lightblue;
-            margin: 10px;
-            transition: background-color 0.5s, transform 0.5s;
-        }
-        /* Info Bar Styling */
-        .info-bar {
-            background-color: #f8f9fa;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            border: 1px solid #dee2e6;
-        }
-        .user-info {
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 5px;
-        }
-        .date-time {
-            color: #666;
-            font-family: monospace;
-        }
-        /* New styles for new examples */
-        .draggable {
-            width: 100px;
-            height: 100px;
-            background-color: #007bff;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: move;
-        }
-        .dropzone {
-            width: 200px;
-            height: 200px;
-            border: 2px dashed #666;
-            margin: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .selected {
-            background-color: yellow;
-        }
-        .animated {
-            transition: all 0.3s ease;
-        }
-        .form-control {
-            margin: 10px 0;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Info Bar -->
@@ -147,8 +39,9 @@
     <!-- Set or get attributes -->
     <div class="example" id="example4">
         <h2>Set or get attributes</h2>
-        <img id="myImage" src="https://via.placeholder.com/100x100?text=ON" alt="Bulb">
-        <button onclick="document.getElementById('myImage').src = 'https://via.placeholder.com/100x100?text=OFF';">Change Image</button>
+        <img id="myImage" src="Bulb-off.png" alt="Bulb">
+        <button onclick="document.getElementById('myImage').src='Images/Bulb images/Bulb-off.png'">OFF</button>
+        <button onclick="document.getElementById('myImage').src='Images/Bulb images/Bulb-on.png'">ON</button>
     </div>
     
     <!-- Set or get styles -->
