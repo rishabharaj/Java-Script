@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 24px;
+    color: #333;
+}
+
+.info-bar {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.example {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    margin: 24px auto;
+    padding: 24px;
+    max-width: 600px;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #0056b3;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+img {
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+/* Classes for demonstration */
+.originalClass {
+    color: #333;
+}
+.newClass {
+    font-weight: bold;
+    color: #007bff;
+}
+.active {
+    background: #e2e6ea;
+}
+.highlight {
+    background: yellow;
+    color: #222;
+}
+.lowlight {
+    background: #eee;
+    color: #aaa;
+}
+.selected {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.box {
+    width: 120px;
+    height: 40px;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.form-control {
+    margin-bottom: 12px;
+}
+#usernameError, #emailError {
+    color: red;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+.draggable {
+    width: 100px;
+    height: 40px;
+    background: #ffc107;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: grab;
+    transition: opacity 0.2s;
+}
+.dropzone {
+    width: 120px;
+    height: 50px;
+    border: 2px dashed #007bff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+}
+
+.animated {
+    transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
